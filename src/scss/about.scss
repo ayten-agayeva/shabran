@@ -1,0 +1,114 @@
+.about {
+    .about-block {
+        .title {
+			display: none;
+		}
+    }
+    .our-mission {
+        .item {
+            display: flex;
+            margin-bottom: 50px;
+            .img {
+                width: 50px;
+                height: 50px;
+                border-radius: 5px;
+                background: url("../images/mission-icon.svg") center no-repeat #27392D;
+            }
+            .content{
+                flex: 1;
+                padding-left: 23px;
+                .title {
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 29px;
+                    color: #27392D;
+                    margin-bottom: 11px;
+                }
+                .desc {
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+.shabran {
+    .nature {
+        margin: 100px 118px 0 118px;
+        .block-header {
+            h2 {
+                margin-bottom: 33px;
+            }
+        }
+        .item {
+            .text {
+                margin-bottom: 50px;
+            }
+            .img {
+                margin-top: 50px;
+                img {
+                    width: 100%;
+                    border-radius: 5px;
+                }
+            }
+        }
+        @media (max-width: 991px) {
+            margin: 40px 0 0;
+            .item {
+                .text {
+                    font-size: 12px;
+                    margin-bottom: 0;
+                }
+                .img {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    .blog {
+        margin-bottom: 50px;
+        .item {
+            text-align: center;
+            margin-top: 50px;
+            img {
+                width: 100%;
+                border-radius: 5px;
+            }
+            .title {
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 37px;
+                color: #27392D;
+                margin: 50px 0 23px;
+            }
+            .desc {
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+                color: #27392D;
+                padding: 0 55px;
+            }
+        }
+        @media (max-width: 991px) {
+            .item {
+                position: relative;
+                padding-top: 50px;
+                margin-top: 40px;
+                .title {
+                    position: absolute;
+                    width: 100%;
+                    font-size: 18px;
+                    top: 0;
+                    margin: 0;
+                    text-align: center;
+                }
+                .desc {
+                    font-size: 12px;
+                    padding: 20px 0 0;
+                }
+            }
+        }
+    }
+}

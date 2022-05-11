@@ -1,0 +1,228 @@
+{% extends "home_layout.html" %} {% block content %}
+<div class="home-slider">
+    <div class="slider">
+        <div><a data-fancybox="gallery" class="video" href="https://www.youtube.com/watch?v=LTzoff2w-uw"><img src="images/home-slider.png"><i></i></a></div>
+        <div><a data-fancybox="gallery" class="video" href="https://www.youtube.com/watch?v=LTzoff2w-uw"><img src="images/home-slider.png"><i></i></a></div>
+        <div><a data-fancybox="gallery" class="video" href="https://www.youtube.com/watch?v=LTzoff2w-uw"><img src="images/home-slider.png"><i></i></a></div>
+        <div><a data-fancybox="gallery" class="video" href="https://www.youtube.com/watch?v=LTzoff2w-uw"><img src="images/home-slider.png"><i></i></a></div>
+    </div>
+</div>
+<div class="container">
+    <div class="filter-row">
+        <form action="/bron.html" method="">
+            <div class="form">
+                <div class="input">
+                    <input name="date" class="datepick datepicker_dd_mm" type="text" readonly placeholder="Arrival"> 
+                </div>
+                <div class="input">
+                    <input name="date" class="datepick datepicker_dd_mm" type="text" readonly placeholder="Departure"> 
+                </div>
+                <div class="dropdown-wrap">
+                    <div class="dropdown">
+                      <div class="title"><span>Guests</span></div>
+                      <div class="content">
+                        <div class="sld">
+							<label>Böyüklər</label>
+							<div><button class="down">-</button><input type="text" class="onlyNumber" value="1" /><button class="up">+</button></div>
+						</div>
+                      </div>
+                    </div>
+                </div>
+                <div class="dropdown-wrap">
+                    <div class="dropdown">
+                      <div class="title"><span>Children</span></div>
+                      <div class="content">
+						  <div class="sld">
+							  <label>Uşaq sayı</label>
+							  <div><button class="down">-</button><input type="text" class="onlyNumber" value="1" /><button class="up">+</button></div>
+						  </div>
+						  <div class="age">
+							  <label>Uşaq yaşı</label>
+							  <div><select>{% for i in 1..9 %}<option value="{{ i }}">{{ i }}</option>{% endfor %}</select></div>
+						  </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="dropdown-wrap">
+                    <div class="dropdown">
+                      <div class="title room"><span>Rooms</span></div>
+                      <div class="content">
+						  <div class="sld">
+							  <label>Otaq</label>
+							  <div><button class="down">-</button><input type="text" class="onlyNumber" value="1" /><button class="up">+</button></div>
+						  </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="btn-wrap"><button class="btn">VIEW RATES</button></div>
+            </div>
+        </form>
+    </div>
+    <div class="booking">
+        <div class="block-header">
+			<h2 class="title">DELUXE KING ROOM</h2>
+		</div>
+        <div class="slider">
+            <div><a href=""><img src="images/sample/rooms/reservation.png"></a></div>
+            <div><a href=""><img src="images/sample/rooms/reservation.png"></a></div>
+            <div><a href=""><img src="images/sample/rooms/reservation.png"></a></div>
+        </div>
+        <div class="text-center"><a class="more" href="">ƏTRAFLI</a></div>
+    </div>
+</div>
+<div class="slider-block slider-type1 beige-bg">
+    <div class="container">
+        <div class="slider">
+            <div>
+                <div class="slider-overlay">
+                    <div class="slider-side">
+                        <div class="title">
+                            <a href="">AYURVEDA SPA</a>
+                        </div>
+                        <div class="desc">Chic and sophisticated, Shabran Wellbeing Resort provides
+                            exotically inspired retreat and creates a profound feeling of divine harmony and
+                            seamless relaxation.</div>
+                        <div class="btn-wrap"><a class="more" href="">more</a></div>
+                    </div>
+                    <a href=""><img src="images/sample/spa/home-spa.png"></a>
+                </div>
+                <!-- <div class="btn-wrap visible-m"><a class="more" href="">more</a></div> -->
+            </div>
+            <div>
+                <div class="slider-overlay">
+                    <div class="slider-side">
+                        <div class="title">
+                            <a href="">AYURVEDA SPA</a>
+                        </div>
+                        <div class="desc">Chic and sophisticated, Shabran Wellbeing Resort provides
+                            exotically inspired retreat and creates a profound feeling of divine harmony and
+                            seamless relaxation.</div>
+                        <div class="btn-wrap"><a class="more" href="">more</a></div>
+                    </div>
+                    <a href=""><img src="images/sample/spa/home-spa.png"></a>
+                </div>
+            </div>
+            <div>
+                <div class="slider-overlay">
+                    <div class="slider-side">
+                        <div class="title">
+                            <a href="">AYURVEDA SPA</a>
+                        </div>
+                        <div class="desc">Chic and sophisticated, Shabran Wellbeing Resort provides
+                            exotically inspired retreat and creates a profound feeling of divine harmony and
+                            seamless relaxation.</div>
+                        <div class="btn-wrap"><a class="more" href="">more</a></div>
+                    </div>
+                    <a href=""><img src="images/sample/spa/home-spa.png"></a>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+<div class="slider-block slider-type1 gray-bg rw">
+    <div class="container">
+        <div class="slider">
+            <div>
+                <div class="slider-overlay">
+                    <div class="slider-side text-right">
+                        <div class="title">
+                            <a href="">DINING</a>
+                            <img src="images/sample/rooms/rubai.svg">
+                        </div>
+                        <div class="desc">This stylish restaurant offers a unique all-day dining
+                            experience for the whole family.
+                            <span>Breakfast: 07:00 – 11:00</span> 
+                            <span>Lunch & Dinner: 12:00 - 00:00</span> 
+                        </div>
+                        <div class="btn-wrap"><a class="more" href="">more</a></div>
+                    </div>
+                    <a href=""><img src="images/sample/rooms/type2.png"></a>
+                    <!-- <div class="btn-wrap visible-m"><a class="more" href="">more</a></div> -->
+                </div>
+            </div>
+            <div>
+                <div class="slider-overlay">
+                    <div class="slider-side text-right">
+                        <div class="title">
+                            <a href="">DINING</a>
+                            <img src="images/sample/rooms/rubai.svg">
+                        </div>
+                        <div class="desc">This stylish restaurant offers a unique all-day dining
+                            experience for the whole family.
+                            <span>Breakfast: 07:00 – 11:00</span> 
+                            <span>Lunch & Dinner: 12:00 - 00:00</span> 
+                        </div>
+                        <div class="btn-wrap"><a class="more" href="">more</a></div>
+                    </div>
+                    <a href=""><img src="images/sample/rooms/type2.png"></a>
+                </div>
+            </div>
+            <div>
+                <div class="slider-overlay">
+                    <div class="slider-side text-right">
+                        <div class="title">
+                            <a href="">DINING</a>
+                            <img src="images/sample/rooms/rubai.svg">
+                        </div>
+                        <div class="desc">This stylish restaurant offers a unique all-day dining
+                            experience for the whole family.
+                            <span>Breakfast: 07:00 – 11:00</span> 
+                            <span>Lunch & Dinner: 12:00 - 00:00</span> 
+                        </div>
+                        <div class="btn-wrap"><a class="more" href="">more</a></div>
+                    </div>
+                    <a href=""><img src="images/sample/rooms/type2.png"></a>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+<div class="container">
+    <div class="region">
+        <div class="block-header">
+			<h2 class="title">SHABRAN REGION</h2>
+		</div>
+        <div class="text">
+            <div>Located in the northeast part of the Greater Caucasus Mountains of
+                Azerbaijan, Shabran Wellbeing Resort is a unique destination for recreation and
+                tranquillity. This luxuriously appointed hotel serves as the first Ayurveda
+                healing retreat in Azerbaijan.</div>
+            <div>
+                Situated 157 kilometers away from the capital city Baku, Shabran Wellbeing
+                Resort is a perfectly hidden oasis in a picturesque district of Shabran,
+                surrounded by green forests and mountains.</div>
+        </div>
+        <img src="images/sample/shabran.png" alt="" title="">
+        <div class="text-center"><a class="more" href="">more</a></div>
+    </div>
+    <div class="offers">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="block-header">
+                    <h2 class="title">SPECIAL OFFERS</h2>
+                </div>
+                <div class="desc">Heal, rejuvenate, cure. Eplore our lavish offers 
+                    at Shabran Wellbeing Resort.
+                </div>
+                <div class="btn-wrap"><a class="more" href="">more</a></div>
+            </div>
+            <div class="col-md-8"><img src="images/sample/offers.png"></div>
+        </div>
+    </div>
+    <div class="location">
+        <div class="title">Azerbaijan, Shabran village</div>
+        <div class="maps" id="map" data-lat="40.420199065135805" data-lng="49.87461310915277"></div>
+    </div>
+</div>
+<div class="covid-19">
+    <div class="container">
+        <div class="d-flex">
+            <div>
+                <div class="title">COVID - 19 UPDATES</div>
+                <div class="desc">instead of Services</div>
+            </div>
+            <div><a class="more" href="">ƏTRAFLI OXU</a></div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,23 @@
+# Shabran
+
+## Project setup
+```
+yarn install
+```
+
+### Compiles and hot-reloads for development
+```
+yarn serve
+```
+
+### Compiles and minifies for production
+```
+yarn build
+```
+
+### Website
+[https://shabran.pages.dev](https://shabran.pages.dev)
+
+#### Pages
+
+
